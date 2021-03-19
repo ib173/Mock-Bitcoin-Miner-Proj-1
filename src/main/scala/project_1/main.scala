@@ -53,13 +53,18 @@ object main {
 
     val seed = new java.util.Date().hashCode;
 
+    // val nonce = sc.range(0, trials).mapPartitionsWithIndex((indx, iter) => {
+    //   val list = (0 to trials).by(1).toList
+    //   val m_iter = list.iterator
+    //   iter.map(x => m_iter.next)
+    // })
+
     val nonce = sc.range(0, trials).mapPartitionsWithIndex((indx, iter) => {
       val rand = new scala.util.Random(indx + seed)
       iter.map(x => rand.nextInt(Int.MaxValue - 1) + 1)
     })
 
     val hash_result = nonce.map(x => (x.toString(), sha256Hash(x.toString() + header_1)))
-
     val ans = hash_result.filter({ case (x: String, y: String) => y.startsWith(zeroes_prefix) })
     ans.cache()
 
@@ -77,4 +82,3 @@ object main {
     println("==================================")
   }
 }
-

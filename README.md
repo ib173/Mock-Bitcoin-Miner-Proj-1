@@ -11,11 +11,11 @@ If you're unfamiliar with version control systems, especially Git, please consul
   b.	After the installation, you may need to set the environment variables properly.  
   c.	To test whether or not everything runs, open a terminal and type `spark-shell`. Now that you are in the Scala interpreter, you can execute Scala code here. For example, you can try `println(“Hello World!”)`. You can exit the shell by typing `:q`.  
   d.	Tip: In the Spark shell, you can test segments of Scala codes before you write them in the file. It's a very convenient way to learn Scala and Spark.   
-  
+
 3.	[Install SBT](https://www.scala-sbt.org/download.html)  
   a.	SBT is a builder for Scala programs.  
   b.	Check that the environment variables are set properly.  
-  
+
 ## Cloning the project_1 repository
 This is a template repository. You can duplicate the repository, renaming it and adjusting your own settings, but cannot directly clone it and push to its **origin/main** branch. Create your own repository by selecting the green **Use this template** button. You'll be submitting the link to the respository you created (more on that later). Once you have your own repository, you can clone it to your local machine.
 
@@ -96,6 +96,8 @@ In GCP, simply include the arguments in the **Arguments** field of the job you'r
 ## Reporting your findings
 You'll be submitting a report along with your code that provides commentary on the tasks below.  
 
+** Please see Proj1 Write Up, Ian Brown.pdf for answers **
+
 1. **(4 points)** Run the program on your local machine to solve cases `k = 2,3,4,5,6`. For each `k`, provide `xS`, its hash value, the total time elapsed, and the number of trials.  
 2. **(3 points)** Run the program on GCP to solve the case `k = 7`. Provide `xS`, its hash value, the total time elapsed, and the number of trials. Describe your cluster's configuration (number of machines, number/type of cores, etc.) and your process for estimating the number of trials needed in order to find the nonce.  
 3. **(3 points)** Modify **one** line of code in **src/main/scala/project_1/main.scala** so that the program generates the potential nonce from 1 to `n` (the number of trials) instead of randomly. Discuss whether or not this is more efficient than the randomized approach.
@@ -109,8 +111,8 @@ Delete your project's current **README.md** file (the one you're reading right n
 3. Submit a link to your repo on the canvas assignment
 
 ## Late Submission Penalties
-Beginning with the minute after the deadline, your submission will be docked a full letter grade (10%) for every 
+Beginning with the minute after the deadline, your submission will be docked a full letter grade (10%) for every
 day that it is late. For example, if the assignment is due at 11:59 PM EST on Friday and you submit at 3:00 AM EST on Sunday,
-then you will be docked 20% and the max you could receive on that assignment is an 80%. 
+then you will be docked 20% and the max you could receive on that assignment is an 80%.
 Late penalties are calculated from the last commit in the git log.
 **If you make a commit 48 hours after the deadline, you will receive a 0 -- Please do not do this, it messes up our grading.**
