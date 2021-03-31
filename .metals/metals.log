@@ -210,3 +210,4 @@ WARN  code navigation does not work for the file 'C:\Users\iannb\OneDrive\Docume
 WARN  code navigation does not work for the file 'C:\Users\iannb\OneDrive\Documents\BC Senior Year_\Large Scale Data Processing\Mock-Bitcoin-Miner-Proj-1\src\main\scala\project_1\main.scala' because it doesn't belong to a build target.
 WARN  no build target: C:\Users\iannb\OneDrive\Documents\BC Senior Year_\Large Scale Data Processing\Mock-Bitcoin-Miner-Proj-1\src\main\scala\project_1\main.scala
 WARN  no build target: 
+INFO  shutting down Metals
